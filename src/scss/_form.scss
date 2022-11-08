@@ -1,0 +1,294 @@
+.form-small {
+  font-size: 96%;
+}
+
+.steps-item {
+  display: flex;
+  color: #555;
+  font-size: 14px;
+  align-items: center;
+
+  span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #ccc;
+  }
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .divider {
+    flex: 0;
+    height: 100%;
+    background: #bdbdbd;
+    margin: 0 8px;
+    flex-basis: 1px !important;
+    width: 1px;
+    @include media-breakpoint-up(md) {
+      flex: 1;
+      height: 1px;
+      background: #bdbdbd;
+      margin: 0 8px;
+      min-width: 16px;
+      flex-basis: 100% !important;
+    }
+  }
+
+  .past .steps-item span {
+    background: $success;
+  }
+
+  .active .steps-item span {
+    background: $primary;
+  }
+
+  .disable .steps-item span {
+    background: $secondary;
+  }
+  .list-inline-item {
+    width: 100%;
+    flex-basis: 100%;
+    padding: 0.5rem 0;
+    @include media-breakpoint-up(md) {
+      width: auto;
+      flex-basic: auto;
+      padding: 0;
+    }
+  }
+}
+
+.rooms-book {
+  padding: 1rem 0;
+}
+
+.rooms-book-item {
+  padding: 1rem;
+  background: rgba($color: $primary, $alpha: 0.05);
+  margin: 1rem 0;
+
+  &.border {
+    border: 1px solid #ccc;
+  }
+}
+
+.label-address {
+  opacity: 1;
+  margin: 0;
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  padding: 0 10px;
+  background: #fff;
+  color: #0050a2;
+  font-size: 90%;
+  transition: all 0.5s;
+}
+
+.transfer_address {
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 14px;
+  background: #fff;
+}
+
+.have-ver-line {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ededed;
+    width: 1px;
+  }
+}
+
+// form request
+.form-request {
+  [class^="ri-"],
+  [class*=" ri-"] {
+    font-size: 120%;
+  }
+
+  .label-control {
+    position: absolute;
+    top: 12px;
+    left: 1rem;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.25s, opacity 0.25s, padding 0.25s ease-in-out;
+    transform-origin: 0 0;
+    z-index: -1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0.5;
+  }
+
+  .label-control-2 {
+    top: 12px;
+    position: absolute;
+    transform: translateY(-20px) scale(0.9);
+    left: 10px;
+    color: #0050a2;
+    font-size: 90%;
+    background: #fff;
+    opacity: 1;
+    z-index: 2;
+    padding: 0 0.35rem;
+  }
+
+  .form-control-edit {
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &:not(:placeholder-shown),
+    &:-webkit-autofill,
+    &:focus {
+      + .label-control {
+        transform: translateY(-20px) scale(0.9);
+        left: 10px;
+        color: #0050a2;
+        font-size: 90%;
+        background: #fff;
+        opacity: 1;
+        z-index: 2;
+        padding: 0 0.35rem;
+      }
+    }
+  }
+
+  .form-select-edit {
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+    position: relative;
+
+    &:not(:placeholder-shown),
+    &:-webkit-autofill,
+    &:focus {
+      + .label-control {
+        transform: translateY(-20px) scale(0.9);
+        left: 10px;
+        color: #0050a2;
+        font-size: 90%;
+        background: #fff;
+        opacity: 1;
+        z-index: 2;
+        padding: 0 0.35rem;
+      }
+    }
+  }
+}
+
+.time-out {
+  background: rgba($color: $danger, $alpha: 0.1);
+  padding: 1rem;
+}
+
+.payment-option {
+  .form-check {
+    position: relative;
+  }
+
+  .card-body {
+    padding-top: 2rem;
+  }
+
+  .form-check-payment ~ label {
+    .card-subtitle {
+      font-size: 1.6rem !important;
+    }
+
+    &::after {
+      width: 36px;
+      height: 36px;
+      background-color: #fff;
+      background-image: none;
+      background-repeat: no-repeat;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      position: absolute;
+      top: -16px;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+    }
+  }
+
+  .form-check-payment:checked ~ label {
+    background: rgba($color: $success, $alpha: 0.2);
+    border-color: rgba($color: $success, $alpha: 0.2);
+    cursor: pointer;
+
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='green' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+.item-cabin {
+  .delete {
+    color: $danger;
+  }
+
+  a {
+    color: #bbb;
+    line-height: 1;
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .bi {
+    font-size: 24px;
+  }
+}
+
+.addnumber {
+  color: $primary;
+
+  .note {
+    color: #999;
+    font-style: italic;
+  }
+}
+
+.tab-indent {
+  padding-left: 2rem;
+}
+
+.list-group-item {
+  padding: 2rem 0;
+}
+
+.promotion-code {
+  width: 120px;
+}
+
+.policy a .ri-arrow-down-s-line {
+  transform: rotate(0);
+  transition: $transation;
+}
+
+.policy a:not(.collapsed)[aria-expanded="true"] .ri-arrow-down-s-line {
+  transform: rotate(180deg);
+}

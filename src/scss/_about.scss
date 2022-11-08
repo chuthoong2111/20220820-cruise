@@ -1,0 +1,9 @@
+.about-list {
+  .col-12 {
+    &:nth-child(2n) {
+      .item-hoz {
+        flex-direction: row-reverse !important;
+      }
+    }
+  }
+}

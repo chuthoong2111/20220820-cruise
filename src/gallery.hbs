@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description"
+    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools." />
+  <meta name="keywords"
+    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+</head>
+
+<body>
+  {{>layouts/header3}}
+
+  <div class="main">
+    <section class="has-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav nav-pills mb-3 justify-content-center align-items-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill active" id="tabOne-tab" data-bs-toggle="pill"
+                  data-bs-target="#tabOne" type="button" role="tab" aria-controls="tabOne" aria-selected="true">BHAYA
+                  PREMIUM</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill" id="tabTwo-tab" data-bs-toggle="pill" data-bs-target="#tabTwo"
+                  type="button" role="tab" aria-controls="tabTwo" aria-selected="false">THE AU CO</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill" id="tanThree-tab" data-bs-toggle="pill" data-bs-target="#tanThree"
+                  type="button" role="tab" aria-controls="tanThree" aria-selected="false">BHAYA CLASSIC</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="tabOne" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <div class="row ">
+                  <div class="col-12 text-center">
+                    <div class="group-title">
+                      <div class="fs-2 title subtitle">Overview</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8  mx-auto">
+                    <div class="swiper galleryOneboat">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex justify-content-center"><a data-fancybox="gallery4"
+                            href="https://lipsum.app/id/46/1600x1200"><img src="https://placehold.jp/600x400.png"
+                              alt="logo" class="img-fluid object-fit-cover" /></a></div>
+                        <div class="swiper-slide d-flex justify-content-center"><a data-fancybox="gallery4"
+                            href="https://lipsum.app/id/47/1600x1200"><img src="https://placehold.jp/600x400.png"
+                              alt="logo" class="img-fluid object-fit-cover" /></a></div>
+                        <div class="swiper-slide d-flex justify-content-center"><a data-fancybox="gallery4"
+                            href="https://lipsum.app/id/51/1600x1200"><img src="https://placehold.jp/600x400.png"
+                              alt="logo" class="img-fluid object-fit-cover" /></a></div>
+
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                  <div class="fs-3 col-12 text-center mb-2 title subtitle">Accommodation</div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100"></a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100"></a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100"></a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100">
+                      <span class="overflowbgr">+2</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row mt-5 justify-content-center">
+                  <div class="fs-3 col-12 text-center mb-2 title subtitle">Facilities & Activities</div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100"></a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100"></a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100"></a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a data-fancybox="gallery4" href="https://lipsum.app/id/46/1600x1200"
+                      class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100">
+                      <span class="overflowbgr">+2</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tabTwo" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+              <div class="tab-pane fade" id="tanThree" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </div>
+  {{>layouts/footer2}}
+</body>
+
+</html>

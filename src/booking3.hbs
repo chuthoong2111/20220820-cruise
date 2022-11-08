@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description"
+    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools." />
+  <meta name="keywords"
+    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+</head>
+
+<body class="form-page">
+
+  {{>layouts/header3}}
+  <main class="mt-0">
+    <div class="main my-5">
+      {{>./components/breadcrumb}}
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="fs4 title">CRUISE PACKAGE REQUEST
+            </h2>
+            <div class="dev my-1 text-danger">
+              (all marked * fields are compulsory)
+            </div>
+          </div>
+          <div class="col-lg-8 mx-auto py-5 my-3">
+
+            <div class="lead mb-1"> Cruise name:</div>
+            <div class="fw-bold text-primary fs-4">3 Days Voyage through Gulf of Tonkin on Luxury Cruise</div>
+            <div class="form-request mt-4">
+              <div class="row">
+                <div class="col-12 mb-3 ">
+                  <div class="position-relative">
+                    <div class="have-icon position-relative">
+                      <input type="email" class="form-control form-control-edit" id="" aria-describedby="emailHelp"
+                        placeholder="&nbsp;">
+                      <i class="ri-calendar-2-line"></i>
+                    </div>
+                    <label for="" class="form-label label-control-2">Email address <span
+                        class="text-danger">*</span></label>
+
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="position-relative">
+                    <input type="name" class="form-control form-control-edit" id="" aria-describedby="Name"
+                      placeholder="&nbsp;">
+                    <label for="" class="form-label label-control-2">Adult <span class="text-danger">*</span></label>
+                    <div id="emailName" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="position-relative">
+                    <input type="name" class="form-control form-control-edit" id="" aria-describedby="Name"
+                      placeholder="&nbsp;">
+                    <label for="" class="form-label label-control-2">Children (6-11 yrs) <span
+                        class="text-danger">*</span></label>
+                    <div id="emailName" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="position-relative">
+                    <input type="name" class="form-control form-control-edit" id="" aria-describedby="Name"
+                      placeholder="&nbsp;">
+                    <label for="" class="form-label label-control-2">Infant (0-5 yrs) <span
+                        class="text-danger">*</span></label>
+                    <div id="emailName" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <p class="lead mb-2">Your preferred cabin type(s):</p>
+                  <div class="form-check form-check-inline col-lg-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Deluxe Cabin
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline col-lg-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Grand Deluxe Cabin</label>
+                  </div>
+                  <div class="form-check form-check-inline  col-lg-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Executive Cabin</label>
+                  </div>
+                  <div class="form-check form-check-inline  col-lg-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Long Quan Suite</label>
+                  </div>
+                  <div class="form-check form-check-inline  col-lg-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">
+                      Au Co Suite</label>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="position-relative">
+                    <input type="email" class="form-control form-control-edit" id="" aria-describedby="emailHelp"
+                      placeholder="&nbsp;">
+                    <label for="" class="form-label label-control">Name <span class="text-danger">*</span></label>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="position-relative">
+                    <input type="email" class="form-control form-control-edit" id="" aria-describedby="emailHelp"
+                      placeholder="&nbsp;">
+                    <label for="" class="form-label label-control">Email address <span
+                        class="text-danger">*</span></label>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="position-relative">
+                    <select type="email" class="form-select form-select-edit" id="" aria-describedby=""
+                      placeholder="&nbsp;">
+                      <option value="one"></option>
+                    </select>
+                    <label for="" class="form-label label-control">
+                      City/Region <span class="text-danger">*</span></label>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="position-relative">
+                    <input type="email" class="form-control form-control-edit" id="" aria-describedby="emailHelp"
+                      placeholder="&nbsp;">
+                    <label for="" class="form-label label-control">Promotion <span class="text-danger">*</span></label>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="position-relative">
+                    <textarea rows="3" cols="8" name="special_request"
+                      placeholder="If you have any special requests (special dietary requirements, child car seat, kid meal, anniversary...), please let us know."
+                      id="special_request" class="form-control form-control-edit"></textarea>
+                    <label for="" class="form-label label-control-2">
+                      City/Region <span class="text-danger">*</span></label>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="position-relative">
+                    <select type="email" class="form-select form-select-edit" id="" aria-describedby=""
+                      placeholder="&nbsp;">
+                      <option value="one"></option>
+                    </select>
+                    <label for="" class="form-label label-control">
+                      City/Region <span class="text-danger">*</span></label>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                </div>
+                <div class="col-12 mb-3 d-flex align-items-center">
+                  <img src="https://placehold.jp/150x50.png" data-src="https://placehold.jp/150x50.png" alt="#"
+                    class="lazy fade-in me-2">
+                  <input type="email" class="form-control form-control-edit" id="" aria-describedby="emailHelp"
+                    placeholder="&nbsp;">
+                </div>
+                <div class="col-12 mt-3">
+                  <a type="submit" class="btn btn-primary btn-lg text-white text-uppercase">
+                    Proceed to Payment <i class="ri-check-line ms-1"></i></a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+  {{>layouts/footer2}}
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description"
+    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools." />
+  <meta name="keywords"
+    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+</head>
+
+<body class="form-page">
+
+  {{>layouts/header3}}
+  <main class="mt-0">
+    <div class="main my-5">
+      {{>./components/breadcrumb}}
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center pt-5 pb-4">
+            <ul class="steps list-inline">
+              <li class="list-inline-item past">
+                <div class="steps-item"><span><i class="ri-check-line"></i></span>Cruise & Options</div>
+              </li>
+              <li class="list-inline-item divider"></li>
+              <li class="list-inline-item active">
+                <div class="steps-item "><span>2</span>Enter your details</div>
+              </li>
+              <li class="list-inline-item divider"></li>
+              <li class=" list-inline-item disable">
+                <div class="steps-item"><span>3</span>Confirmation</div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 pe-lg-5">
+            <div class="infomation">
+              <h2 class="fw-normal fs-4 text-primary mb-3">Your cruise reservation</h2>
+              <div class="row gy-2 form-small">
+                <div class="col-3">Package:</div>
+                <div class="col-7">2 Days 1 Night Cruise on Bhaya Classic</div>
+                <div class="col-2 text-end"></div>
+                {{!-- line --}}
+                <div class="col-3">Depart:</div>
+                <div class="col-7">Jul 23 2022 (around 12:30 PM)</div>
+                <div class="col-2 text-end"> <a href="#" class="text-decoration-underline">Change</a></div>
+                {{!-- line --}}
+                <div class="col-3">Return:</div>
+                <div class="col-7">Jul 24 2022 (around 10:30 AM) </div>
+                <div class="col-2 text-end"></div>
+                {{!-- line --}}
+                <div class="col-3">Number of cabin:</div>
+                <div class="col-7"> <span class="number-room text-primary">1</span> <span>room</span> -
+                  <span class="number-adult text-primary">2</span> <span>Adult</span> -
+                  <span class="number-child text-primary">0</span> <span>Child</span>
+                </div>
+                <div class="col-2 text-end"> <a href="#" role="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" class="text-decoration-underline">Change</a></div>
+              </div>
+            </div>
+            <div class="rooms-book">
+              <div class="rooms-book-item ">
+                <div class="d-flex justify-content-between align-item-start">
+                  <div class="d-flex flex-column">
+                    <span>Room 1:</span>
+                    <span class="fs-5">Deluxe Cabin</span>
+                    <span class="text-primary fs-6">Flexible Rate</span>
+                  </div>
+                  <div class="d-flex flex-column text-end">
+                    <span class="fs-5">RATE</span>
+                    <span class="text-primary fs-5"> US$364</span>
+                  </div>
+                </div>
+
+                <div class="guest d-flex mt-4 mb-1">
+                  <span class="me-3">Guests:</span>
+                  <span>02 Adults</span>
+                </div>
+                <div class="carbin d-flex mb-4">
+                  <span class="me-3">Bed preference:</span>
+                  <span class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                      value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Default radio
+                    </label>
+                  </span>
+                  <span class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                      value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Second default radio
+                    </label>
+                  </span>
+
+                </div>
+
+
+
+
+                <div class="policy d-flex flex-column">
+                  <a href="#" class="text-secondary d-flex align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#collapsePolicy" aria-expanded="false" aria-controls="collapsePolicy">Cancellation
+                    policy:<i class="ri-arrow-down-s-line fs-5 ms-2"></i></a>
+                  <span>Free cancellation until 8 days prior to cruise date.</span>
+                  <div class="collapse" id="collapsePolicy">
+                    <div clas=" d-flex flex-column">
+                      <span>Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed</span>
+                      <span> when the user activates the relevant trigger.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transfer">
+              <h2 class="fw-normal fs-4 text-primary mb-3">Transfer from Hanoi (Optional)</h2>
+              <div class="row gy-1">
+                <div class="col-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Transfer by Shuttle Bus (round trip): Hanoi – Halong – Hanoi
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2 text-end"><span class="text-primary fs-5 "> US$80</span></div>
+                <div class="col-10">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Transfer by private car: Hanoi – Halong – Hanoi (or direct to Noi Bai airport)
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2  text-end"><span class="text-primary fs-5">US$215</span></div>
+                <div class="col-10">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      No transfer
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2 text-end"><span class="text-primary fs-5">0</span></div>
+                <div class="col-12 position-relative mt-3">
+                  <textarea rows="3" name="transfer_address"
+                    placeholder="Type your pick-up address in Hanoi centre here (or leave blank and provide later via email)"
+                    class="form-control transfer_address"></textarea>
+                  <label class="label-address">Pick-up address (Hanoi center)</label>
+                </div>
+              </div>
+
+            </div>
+            <div class="total-money">
+              <hr class="mb-4 mt-4">
+              <div class="d-flex justify-content-between mb-1">
+                <h2 class="fw-normal fs-4 mb-3">Total</h2>
+                <span class="text-primary text-end fs-4 "> US$380</span>
+              </div>
+              <div class="d-flex justify-content-between text-success form-small">
+                <span>10% VAT</span>
+                <span>Included</span>
+              </div>
+              <div class="d-flex justify-content-between text-success form-small">
+                <span> 5% Service Charge</span>
+                <span>Included</span>
+              </div>
+              <div class="d-flex justify-content-between text-success form-small">
+                <span>Sightseeing Entrance Fees</span>
+                <span>Included</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 ps-lg-5 have-ver-line">
+            <h2 class="fw-normal fs-4 text-primary mb-1">Transfer from Hanoi (Optional)</h2>
+            <p class="text-success">We just need a few details to secure this best rate for you!</p>
+
+            <div class="form-request">
+              <div class="mb-3 position-relative">
+                <input type="name" class="form-control form-control-edit" id="" aria-describedby="Name"
+                  placeholder="&nbsp;">
+                <label for="" class="form-label label-control">Name <span class="text-danger">*</span></label>
+                <div id="emailName" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3 position-relative">
+                <input type="email" class="form-control form-control-edit" id="" aria-describedby="emailHelp"
+                  placeholder="&nbsp;">
+                <label for="" class="form-label label-control">Email address <span class="text-danger">*</span></label>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3 position-relative">
+                <input type="email" class="form-control form-control-edit" id="" aria-describedby=""
+                  placeholder="&nbsp;">
+                <label for="" class="form-label label-control">
+                  Confirm email address <span class="text-danger">*</span></label>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3 position-relative">
+                <input type="email" class="form-control form-control-edit" id="" aria-describedby=""
+                  placeholder="&nbsp;">
+                <label for="" class="form-label label-control">
+                  Phone number</label>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3 position-relative">
+                <select type="email" class="form-select form-select-edit" id="" aria-describedby=""
+                  placeholder="&nbsp;">
+                  <option value="one"></option>
+                </select>
+                <label for="" class="form-label label-control">
+                  City/Region <span class="text-danger">*</span></label>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3 position-relative">
+                <select type="email" class="form-select form-select-edit" id="" aria-describedby=""
+                  placeholder="&nbsp;">
+                  <option value="one"></option>
+                </select>
+                <label for="" class="form-label label-control">
+                  You First Know About Bhaya Cruises Via <span class="text-danger">*</span></label>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3 position-relative">
+                <textarea rows="3" cols="8" name="special_request"
+                  placeholder="If you have any special requests (special dietary requirements, child car seat, kid meal, anniversary...), please let us know."
+                  id="special_request" class="form-control form-control-edit"></textarea>
+                <label for="" class="form-label label-control-2">
+                  City/Region <span class="text-danger">*</span></label>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+            </div>
+            <div class="payment-option mt-5">
+              <h2 class="fw-normal fs-4 text-primary mb-1"> PAYMENT OPTIONS</h2>
+              <p> Major credit cards & PAYPAL accepted. Processed via certified payment gateway OnePay.</p>
+              <div class="d-flex mt-4  justify-content-between mx-n1">
+                <div class="card form-check text-center w-100 mx-1 active p-0">
+                  <input class="form-check-input form-check-payment d-none" type="radio" name="flexRadioDefault"
+                    id="flexRadioDefault11" checked>
+                  <label class="card-body " for="flexRadioDefault11">
+                    <span class="card-title fw-normal fs-5">Deposit 50%</span>
+                    <span class="card-subtitle fs-2  my-3 text-primary">US$290</span>
+
+                  </label>
+                </div>
+                <div class="card form-check text-center w-100 mx-1  p-0">
+                  <input class="form-check-input  form-check-payment d-none" type="radio" name="flexRadioDefault"
+                    id="flexRadioDefault12">
+                  <label class="card-body" for="flexRadioDefault12">
+                    <span class="card-title fw-normal fs-5">Deposit 100%</span>
+                    <span class="card-subtitle fs-2  my-3 text-primary">US$580</span>
+
+                  </label>
+                </div>
+              </div>
+              <div class="my-5 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1"><span data-v-f87915e4="">I read and accepted the <a
+                      href="/booking-conditions" target="_blank">terms &amp; conditions</a></span></label>
+
+              </div>
+              <div class="text-center">
+                <a type="submit" class="btn btn-primary btn-lg text-white text-uppercase">
+                  Proceed to Payment <i class="ri-check-line ms-1"></i></a>
+                <div class="w-100 my-3"></div>
+                <a type="submit" class="btn btn-default btn-lg text-secondary text-uppercase">
+                  Send Inquiry & Pay Later
+                </a>
+                <div class="w-100 my-3"></div>
+                <div class="time-out"><i class="bi bi-alarm text-danger me-2"></i>Reserve now or this special rate will
+                  be
+                  released in <span class="text-danger">12:33</span> minutes!</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="exampleModalLabel">
+              <span class="number-room text-primary">1</span>
+              <span>room</span> -
+              <span class="number-adult text-primary">2</span> <span>Adult</span> -
+              <span class="number-child text-primary">0</span> <span>Child</span>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="item-cabin mb-3">
+              <div class="item-cabin__header d-flex">
+                <span class="text-primary me-auto">CABIN 01</span>
+
+              </div>
+              <div class="border p-1 d-flex my-2">
+                <a role="button" href="#"> <i class="ri-indeterminate-circle-line"></i></a>
+                <div class="addnumber  w-100 text-center">
+                  <span>1</span><span class="note"> Adults (12+ yrs)</span>
+                </div>
+                <a role="button" href="#"><i class="ri-add-circle-line"></i></a>
+              </div>
+              <div class="border p-1 d-flex my-2">
+                <a role="button" href="#"> <i class="ri-indeterminate-circle-line"></i></a>
+                <div class="addnumber  w-100 text-center">
+                  <span>1</span><span class="note"> Child (6-11 yrs)</span>
+                </div>
+                <a role="button" href="#"><i class="ri-add-circle-line"></i></a>
+              </div>
+              <div class="border p-1 d-flex my-2">
+                <a role="button" href="#"> <i class="ri-indeterminate-circle-line"></i></a>
+                <div class="addnumber  w-100 text-center">
+                  <span>1</span><span class="note"> Infant (0-5 yrs)</span>
+                </div>
+                <a role="button" href="#"><i class="ri-add-circle-line"></i></a>
+              </div>
+
+            </div>
+
+            <div class="item-cabin mb-3">
+              <div class="item-cabin__header d-flex">
+                <span class="text-primary me-auto">CABIN 02</span>
+                <a role="button" href="#" class="delete pe-1"><i class="ri-close-circle-fill text-lg"></i></a>
+              </div>
+              <div class="border p-1 d-flex my-2">
+                <a role="button" href="#"> <i class="ri-indeterminate-circle-line"></i></a>
+                <div class="addnumber  w-100 text-center">
+                  <span>1</span><span class="note"> Adults (12+ yrs)</span>
+                </div>
+                <a role="button" href="#"><i class="ri-add-circle-line"></i></a>
+              </div>
+              <div class="border p-1 d-flex my-2">
+                <a role="button" href="#"> <i class="ri-indeterminate-circle-line"></i></a>
+                <div class="addnumber  w-100 text-center">
+                  <span>1</span><span class="note"> Child (6-11 yrs)</span>
+                </div>
+                <a role="button" href="#"><i class="ri-add-circle-line"></i></a>
+              </div>
+              <div class="border p-1 d-flex my-2">
+                <a role="button" href="#"> <i class="ri-indeterminate-circle-line"></i></a>
+                <div class="addnumber  w-100 text-center">
+                  <span>1</span><span class="note"> Infant (0-5 yrs)</span>
+                </div>
+                <a role="button" href="#"><i class="ri-add-circle-line"></i></a>
+              </div>
+              <hr>
+              <a href="#" role="button" class="d-flex align-items-center text-secondary"> <i
+                  class="ri-add-box-fill me-1"></i>
+                Thêm carbin</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary text-white">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {{>layouts/footer2}}
+</body>
+
+</html>

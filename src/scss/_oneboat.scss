@@ -1,0 +1,10 @@
+.nav-pills {
+  border: 1px solid #eee;
+  border-radius: 40px;
+  padding: 4px;
+  .nav-link {
+    font-family: $font-title;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

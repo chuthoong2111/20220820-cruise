@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description"
+    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools." />
+  <meta name="keywords"
+    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+</head>
+
+<body>
+  {{>layouts/header3}}
+  <div class="offer-header pt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0 d-flex justify-content-center flex-column">
+            <div class="tabs-offer">
+              <a class="item active">Blog Home</a>
+              <a class="item">Blog list</a>
+              <a class="item">Blog detail</a>
+            </div>
+           <div class="group-title offer text-center pt-5 m-0">
+          <h1 class="fs-1 title">Blog Home</h1>
+          <svg width="222" height="12" viewBox="0 0 222 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M160.974 12C160.381 12 159.907 11.5258 159.907 10.9331C159.907 10.3403 160.358 9.86613 160.95 9.84242C163.179 9.795 165.218 8.68064 165.929 7.16322C166.38 6.16742 166.214 5.17161 165.408 4.15209C162.966 1.11725 158.01 2.18419 153.98 3.4408C151.016 4.36548 148.052 5.52726 145.207 6.64161C138.497 9.27339 131.574 11.9763 123.726 11.9763C123.133 11.9763 122.659 11.5021 122.659 10.9331C122.659 10.3403 123.11 9.86613 123.679 9.84242C125.789 9.74758 127.733 8.65693 128.397 7.16322C128.847 6.16742 128.658 5.10048 127.828 4.10467C125.338 1.09354 120.454 2.18419 116.447 3.4408C113.555 4.36548 110.686 5.47984 107.912 6.57048C101.107 9.22597 94.089 11.9763 86.1463 11.9763C85.5535 11.9763 85.0793 11.5021 85.0793 10.9094C85.0793 10.3166 85.5298 9.84242 86.1226 9.81871C88.3513 9.77129 90.3903 8.65693 91.1016 7.13951C91.5521 6.14371 91.3861 5.1479 90.58 4.12838C88.1379 1.09354 83.1825 2.16048 79.1519 3.41709C76.1882 4.34177 73.2245 5.50355 70.3793 6.6179C63.6695 9.24968 56.7225 11.9526 48.8746 11.9526C48.2819 11.9526 47.8077 11.4784 47.8077 10.9094C47.8077 10.3166 48.2582 9.84242 48.8272 9.81871C50.9374 9.72387 52.8816 8.63322 53.5454 7.13951C53.9959 6.14371 53.8062 5.07677 52.9764 4.08096C50.4869 1.06983 45.6027 2.16048 41.5957 3.41709C38.7032 4.34177 35.8343 5.45613 33.084 6.54677C26.303 9.20226 19.2612 11.9526 11.3185 11.9526C10.7257 11.9526 10.2515 11.4784 10.2515 10.8856C10.2515 10.2929 10.702 9.81871 11.2948 9.795C13.974 9.72387 15.8944 8.20645 16.3686 6.76016C16.7717 5.57467 16.2975 4.4129 15.0172 3.39338C11.6267 0.761607 5.77041 2.84806 1.90573 4.22322L1.57379 4.36548C1.00476 4.55516 0.412017 4.27064 0.19863 3.72532C0.00895223 3.18 0.293469 2.56354 0.838791 2.35016L1.17073 2.23161C5.5096 0.666769 12.0061 -1.65678 16.3212 1.78112C18.3128 3.36967 19.0478 5.43242 18.3603 7.49516C18.1469 8.15903 17.7912 8.77548 17.317 9.32081C22.462 8.41984 27.2514 6.54677 32.2541 4.60258C35.0519 3.51193 37.9682 2.37387 40.9082 1.42548C45.5316 -0.0445219 51.2693 -1.23001 54.5649 2.75322C55.8927 4.36548 56.2246 6.30968 55.4422 8.04048C55.2288 8.51468 54.968 8.94145 54.6124 9.34452C59.7337 8.46726 64.523 6.59419 69.5258 4.65C72.4184 3.51193 75.4058 2.35016 78.4406 1.40177C83.1351 -0.0682316 88.944 -1.2063 92.1922 2.82435C93.52 4.46032 93.8045 6.33338 92.9984 8.06419C92.785 8.51468 92.5242 8.91774 92.2159 9.2971C97.3372 8.39613 102.103 6.52306 107.106 4.57887C109.903 3.48822 112.82 2.35016 115.76 1.40177C120.383 -0.0682316 126.121 -1.25372 129.416 2.72951C130.744 4.34177 131.076 6.28597 130.294 8.01677C130.08 8.49097 129.82 8.91774 129.464 9.32081C134.585 8.44355 139.375 6.57048 144.377 4.62629C147.27 3.48822 150.257 2.32645 153.316 1.37806C158.01 -0.0682316 163.819 -1.23001 167.067 2.80064C168.395 4.46032 168.68 6.30968 167.874 8.04048C167.66 8.46726 167.399 8.89403 167.091 9.27339C172.212 8.37242 176.978 6.49935 181.981 4.55516C184.779 3.46451 187.695 2.32645 190.635 1.37806C193.361 0.524511 200.569 -1.77533 204.292 2.7058C205.643 4.31806 205.951 6.23855 205.169 7.99306C204.932 8.51468 204.6 9.01258 204.221 9.46306C209.65 8.79919 215.174 7.21064 220.485 4.76855C221.031 4.53145 221.647 4.76854 221.908 5.29016C222.145 5.83548 221.908 6.45193 221.386 6.71274C213.941 10.1269 206.046 11.9526 198.554 11.9526C197.961 11.9526 197.487 11.4784 197.487 10.9094C197.487 10.3166 197.937 9.84242 198.506 9.81871C200.617 9.72387 202.561 8.63322 203.225 7.13951C203.675 6.14371 203.462 5.07677 202.656 4.08096C200.166 1.09354 195.282 2.16048 191.275 3.41709C188.382 4.34177 185.514 5.45613 182.763 6.54677C175.959 9.22597 168.94 11.9763 160.974 12Z" fill="#ECE2BE"/>
+</svg>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <section class="has-padding">
+    <div class="container">
+      
+       
+    
+      <div class="row">
+        <div class="col-12 mb-5">
+          <div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        
+        <img src="https://s3.amazonaws.com/autogrow-s3/wp-content/uploads/2021/09/13154103/header-768x504.png" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">How to Grow Your Agency’s Client Roster [13 Sales Strategies]</div>
+        <div class="blog-slider__text">I remember a professor of mine told me years ago in business school how sales and marketing teams often despise one another… </div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://s3.amazonaws.com/autogrow-s3/wp-content/uploads/2021/07/20210743/13-Genius-Tips-to-Get-More-Freelancing-Clients-768x503.png" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">13 Genius Tips to Get More Freelancing Clients</div>
+        <div class="blog-slider__text">Building a stellar profile as a freelancer can start to feel like a bit of a pipe dream after a while… 💭</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://s3.amazonaws.com/autogrow-s3/wp-content/uploads/2021/07/28135945/15-Crafty-Tips-for-Writing-High-Quality-Copy-for-Your-Clients-768x503.png" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">15 Crafty Tips for Writing High-Quality Copy for Your Clients</div>
+        <div class="blog-slider__text">As advertising tycoon David Ogilvy famously stated, “Copy is not written—copy is assembled.”
+
+But how do you assemble high-quality copy work?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="blog-slider__pagination"></div>
+</div>
+        </div>
+        <div class="col-lg-9">
+           <div class="container-fluid"><div class="row" data-masonry='{"percentPosition": true }' >
+            <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6 mb-4">
+      <div class="card">
+       <a href="./tour-detail.html" class="img"><img
+      src="https://placehold.jp/600x400.png"
+      class="card-img-top"
+      alt="..."
+    /></a>
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+           </div></div>
+        </div>
+        <div class="col-lg-3">
+          <div class="widgets">
+<div class="widget">
+<h4 class="widget-title">About Me</h4>
+<img src="https://demo.gethugothemes.com/liva/site/images/author.jpg" alt="" class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+<a href="https://demo.gethugothemes.com/liva/site/about/" class="btn btn-outline-primary">Know More</a>
+</div>
+<div class="widget">
+<h4 class="widget-title">Category</h4>
+<ul class="list-unstyled">
+<li><a href="/liva/site/categories/android-and-gaming/">Android and gaming</a>
+</li>
+<li><a href="/liva/site/categories/go-language/">Go language</a>
+</li>
+<li><a href="/liva/site/categories/html/">HTML</a>
+</li>
+<li><a href="/liva/site/categories/html-css/">HTML css</a>
+</li>
+<li><a href="/liva/site/categories/programming-language/">Programming language</a>
+</li>
+<li><a href="/liva/site/categories/python/">Python</a>
+</li>
+<li><a href="/liva/site/categories/web-design/">Web design</a>
+</li>
+</ul>
+</div>
+<div class="widget">
+<h4 class="widget-title">Tag</h4>
+<ul class="list-inline">
+<li class="list-inline-item"><a class="d-block p-2 bg-primary text-white" href="/liva/site/tags/game/">Game</a></li>
+<li class="list-inline-item"><a class="d-block p-2 bg-primary text-white" href="/liva/site/tags/html/">HTML</a></li>
+<li class="list-inline-item"><a class="d-block p-2 bg-primary text-white" href="/liva/site/tags/new/">New</a></li>
+<li class="list-inline-item"><a class="d-block p-2 bg-primary text-white" href="/liva/site/tags/photos/">Photos</a></li>
+<li class="list-inline-item"><a class="d-block p-2 bg-primary text-white" href="/liva/site/tags/python/">Python</a></li>
+<li class="list-inline-item"><a class="d-block p-2 bg-primary text-white" href="/liva/site/tags/react/">React</a></li>
+</ul>
+</div>
+<div class="widget">
+<h4 class="widget-title">Social</h4>
+<ul class="list-inline social-links">
+<li class="list-inline-item"><a href="#"><i class="ri-facebook-fill fs-4"></i></a></li>
+<li class="list-inline-item"><a href="#"><i class="ri-twitter-fill fs-4"></i></a></li>
+<li class="list-inline-item"><a href="#"><i class="ri-instagram-fill fs-4"></i></a></li>
+
+<li class="list-inline-item"><a href="#"><i class="ri-linkedin-fill fs-4"></i></a></li>
+</ul>
+</div>
+<div class="widget">
+<img src="https://demo.gethugothemes.com/liva/site/images/promotion.png" alt="" class="img-fluid">
+</div>
+</div>
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    </section>
+   
+   
+  </div>
+  {{>layouts/footer2}}
+</body>
+
+</html>

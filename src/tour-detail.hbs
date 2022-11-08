@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Webpack Boilerplate Starter Template</title>
+  <meta name="description"
+    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools." />
+  <meta name="keywords"
+    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+</head>
+
+<body>
+  {{>layouts/header3}}
+  <div class="filter p-4 text-center">
+    <h1 class="title">4 Days Explore Beyond Halong Bay on Private Cruise</h1>
+  </div>
+  <div class="main mt-0">
+    <section class="has-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Cruise Start Date</label>
+              <div class="position-relative have-icon"><input type="text" class="form-control rounded-0"
+                  id="formGroupExampleInput" placeholder="Example input placeholder">
+                <i class="ri-calendar-2-line"></i>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Cabin & Travelers
+              </label>
+              <a class="d-flex align-items-center justify-content-between form-control text-dark rounded-0" href="#">
+                <div class="d-flex align-items-center"><i class="ri-user-3-line me-2"></i> <strong
+                    class="me-1">1</strong> room, <strong class="me-1">2</strong> Adult - <strong
+                    class="me-1">0</strong> child</div>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+            </div>
+            <div class="mb-3 d-flex flex-column   justify-content-end">
+              <a href="#" class="ms-auto text-success d-flex align-items-center mb-2"><i class="ri-gift-fill me-1"></i>
+                Use promotion code</a>
+              <div class="text-success d-flex justify-content-center align-items-center ms-auto">
+                <span class="text-nowrap">Use promotion code</span>
+                <div class="position-relative d-flex justify-content-end have-icon "><input type="text"
+                    class="form-control rounded-0  mx-2 promotion-code" id="formGroupExampleInput"
+                    placeholder="--------">
+                  <i class="ri-gift-fill me-1"></i>
+                </div>
+                <a href="#" class="btn btn-light">Apply</a>
+              </div>
+            </div>
+            <a class="d-flex justify-content-between mt-auto p-3 bg-secondary-30">
+              3 Days Halong Bay & Lan Ha Bay on Private Cruise
+              <div class="all-price  ms-5">
+                <small class="text-muted"><del>US$182</del> </small>
+                <div class="d-flex flex-row">
+                  <span class="text-price text-nowrap">US$155</span><span>/person</span>
+                </div>
+              </div>
+            </a>
+            <a href="./tour-detail.html" class="btn btn-lg btn-primary rounded-0">
+              <span>
+                Send Request
+              </span>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="#"
+              class="text-secondary mt-auto mb-5 d-flex flex-column align-items-center justify-content-center">
+              <i class="ri-ship-2-line mb-2 fs-1 lh-1"></i>
+              <span>Please select check-in date to show correct pricing</span>
+            </a>
+
+
+          </div>
+
+          <div class="col-lg-8">
+            <div class="gallery-tourdetail row g-3">
+              <div class="col-lg-9">
+                <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200"
+                  class="position-relative d-block"><img src="https://placehold.jp/600x400.png" class="w-100" /></a>
+              </div>
+              <div class="col-lg-3 d-flex flex-wrap flex-row flex-md-column justify-content-between">
+                <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200"
+                  class="position-relative mb-3 mb-md-0 col-6 col-md-12 d-block"><img src="https://placehold.jp/600x400.png" class="w-100" /></a>
+                <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200"
+                  class="position-relative mb-3 mb-md-0 col-6 col-md-12  d-block"><img src="https://placehold.jp/600x400.png" class="w-100" /></a>
+                <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200"
+                  class="position-relative mb-3 mb-md-0 col-6 col-md-12  d-block"><img src="https://placehold.jp/600x400.png" class="w-100" />
+                  <span class="overflowbgr">+8</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-none">
+            <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200" class="position-relative d-block"><img
+                src="https://placehold.jp/600x400.png" class="w-100" />
+
+            </a>
+            <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200" class="position-relative d-block"><img
+                src="https://placehold.jp/600x400.png" class="w-100" />
+
+            </a>
+            <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200" class="position-relative d-block"><img
+                src="https://placehold.jp/600x400.png" class="w-100" />
+
+            </a>
+            <a data-fancybox="gallery2" href="https://lipsum.app/id/46/1600x1200" class="position-relative d-block"><img
+                src="https://placehold.jp/600x400.png" class="w-100" />
+
+            </a>
+          </div>
+
+        </div>
+    </section>
+    <section class="has-padding gradient">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12 text-center">
+            <div class="group-title">
+              <h2 class="fs-1 title">Cruise Itinerary</h2>
+              <svg width="222" height="12" viewBox="0 0 222 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M160.974 12C160.381 12 159.907 11.5258 159.907 10.9331C159.907 10.3403 160.358 9.86613 160.95 9.84242C163.179 9.795 165.218 8.68064 165.929 7.16322C166.38 6.16742 166.214 5.17161 165.408 4.15209C162.966 1.11725 158.01 2.18419 153.98 3.4408C151.016 4.36548 148.052 5.52726 145.207 6.64161C138.497 9.27339 131.574 11.9763 123.726 11.9763C123.133 11.9763 122.659 11.5021 122.659 10.9331C122.659 10.3403 123.11 9.86613 123.679 9.84242C125.789 9.74758 127.733 8.65693 128.397 7.16322C128.847 6.16742 128.658 5.10048 127.828 4.10467C125.338 1.09354 120.454 2.18419 116.447 3.4408C113.555 4.36548 110.686 5.47984 107.912 6.57048C101.107 9.22597 94.089 11.9763 86.1463 11.9763C85.5535 11.9763 85.0793 11.5021 85.0793 10.9094C85.0793 10.3166 85.5298 9.84242 86.1226 9.81871C88.3513 9.77129 90.3903 8.65693 91.1016 7.13951C91.5521 6.14371 91.3861 5.1479 90.58 4.12838C88.1379 1.09354 83.1825 2.16048 79.1519 3.41709C76.1882 4.34177 73.2245 5.50355 70.3793 6.6179C63.6695 9.24968 56.7225 11.9526 48.8746 11.9526C48.2819 11.9526 47.8077 11.4784 47.8077 10.9094C47.8077 10.3166 48.2582 9.84242 48.8272 9.81871C50.9374 9.72387 52.8816 8.63322 53.5454 7.13951C53.9959 6.14371 53.8062 5.07677 52.9764 4.08096C50.4869 1.06983 45.6027 2.16048 41.5957 3.41709C38.7032 4.34177 35.8343 5.45613 33.084 6.54677C26.303 9.20226 19.2612 11.9526 11.3185 11.9526C10.7257 11.9526 10.2515 11.4784 10.2515 10.8856C10.2515 10.2929 10.702 9.81871 11.2948 9.795C13.974 9.72387 15.8944 8.20645 16.3686 6.76016C16.7717 5.57467 16.2975 4.4129 15.0172 3.39338C11.6267 0.761607 5.77041 2.84806 1.90573 4.22322L1.57379 4.36548C1.00476 4.55516 0.412017 4.27064 0.19863 3.72532C0.00895223 3.18 0.293469 2.56354 0.838791 2.35016L1.17073 2.23161C5.5096 0.666769 12.0061 -1.65678 16.3212 1.78112C18.3128 3.36967 19.0478 5.43242 18.3603 7.49516C18.1469 8.15903 17.7912 8.77548 17.317 9.32081C22.462 8.41984 27.2514 6.54677 32.2541 4.60258C35.0519 3.51193 37.9682 2.37387 40.9082 1.42548C45.5316 -0.0445219 51.2693 -1.23001 54.5649 2.75322C55.8927 4.36548 56.2246 6.30968 55.4422 8.04048C55.2288 8.51468 54.968 8.94145 54.6124 9.34452C59.7337 8.46726 64.523 6.59419 69.5258 4.65C72.4184 3.51193 75.4058 2.35016 78.4406 1.40177C83.1351 -0.0682316 88.944 -1.2063 92.1922 2.82435C93.52 4.46032 93.8045 6.33338 92.9984 8.06419C92.785 8.51468 92.5242 8.91774 92.2159 9.2971C97.3372 8.39613 102.103 6.52306 107.106 4.57887C109.903 3.48822 112.82 2.35016 115.76 1.40177C120.383 -0.0682316 126.121 -1.25372 129.416 2.72951C130.744 4.34177 131.076 6.28597 130.294 8.01677C130.08 8.49097 129.82 8.91774 129.464 9.32081C134.585 8.44355 139.375 6.57048 144.377 4.62629C147.27 3.48822 150.257 2.32645 153.316 1.37806C158.01 -0.0682316 163.819 -1.23001 167.067 2.80064C168.395 4.46032 168.68 6.30968 167.874 8.04048C167.66 8.46726 167.399 8.89403 167.091 9.27339C172.212 8.37242 176.978 6.49935 181.981 4.55516C184.779 3.46451 187.695 2.32645 190.635 1.37806C193.361 0.524511 200.569 -1.77533 204.292 2.7058C205.643 4.31806 205.951 6.23855 205.169 7.99306C204.932 8.51468 204.6 9.01258 204.221 9.46306C209.65 8.79919 215.174 7.21064 220.485 4.76855C221.031 4.53145 221.647 4.76854 221.908 5.29016C222.145 5.83548 221.908 6.45193 221.386 6.71274C213.941 10.1269 206.046 11.9526 198.554 11.9526C197.961 11.9526 197.487 11.4784 197.487 10.9094C197.487 10.3166 197.937 9.84242 198.506 9.81871C200.617 9.72387 202.561 8.63322 203.225 7.13951C203.675 6.14371 203.462 5.07677 202.656 4.08096C200.166 1.09354 195.282 2.16048 191.275 3.41709C188.382 4.34177 185.514 5.45613 182.763 6.54677C175.959 9.22597 168.94 11.9763 160.974 12Z"
+                  fill="#ECE2BE" />
+              </svg>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8cbisHgAHngKy8dJ9pAAAAABJRU5ErkJggg=="
+              data-src="https://bhayacruises.com/photos/shares/RouteMap/4d3n-routemap-bhaya-legend.jpg"
+              class="img-fluid">
+          </div>
+          <div class="col-lg-6 bg-accodition">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingOne">
+                  <div class="accordion-button d-flex flex-column align-items-start" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <p><strong>DAY 1</strong></p>
+                    <p><strong>Main attraction:</strong> Cap La & Tra San Area</p>
+
+                    <p><strong>Things to do</strong>: Kayak in Cap La & Tra San Area</p>
+                  </div>
+
+
+
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingTwo">
+                  <div class="accordion-button  collapsed d-flex flex-column align-items-start" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    <p><strong>DAY 2</strong></p>
+                    <p><strong>Main attraction:</strong> Cap La & Tra San Area</p>
+
+                    <p><strong>Things to do</strong>: Kayak in Cap La & Tra San Area</p>
+                  </div>
+
+
+
+                </div>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <section class="has-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="group-title">
+              <h2 class="fs-1 title">Cabin & Suites
+              </h2>
+              <svg width="222" height="12" viewBox="0 0 222 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M160.974 12C160.381 12 159.907 11.5258 159.907 10.9331C159.907 10.3403 160.358 9.86613 160.95 9.84242C163.179 9.795 165.218 8.68064 165.929 7.16322C166.38 6.16742 166.214 5.17161 165.408 4.15209C162.966 1.11725 158.01 2.18419 153.98 3.4408C151.016 4.36548 148.052 5.52726 145.207 6.64161C138.497 9.27339 131.574 11.9763 123.726 11.9763C123.133 11.9763 122.659 11.5021 122.659 10.9331C122.659 10.3403 123.11 9.86613 123.679 9.84242C125.789 9.74758 127.733 8.65693 128.397 7.16322C128.847 6.16742 128.658 5.10048 127.828 4.10467C125.338 1.09354 120.454 2.18419 116.447 3.4408C113.555 4.36548 110.686 5.47984 107.912 6.57048C101.107 9.22597 94.089 11.9763 86.1463 11.9763C85.5535 11.9763 85.0793 11.5021 85.0793 10.9094C85.0793 10.3166 85.5298 9.84242 86.1226 9.81871C88.3513 9.77129 90.3903 8.65693 91.1016 7.13951C91.5521 6.14371 91.3861 5.1479 90.58 4.12838C88.1379 1.09354 83.1825 2.16048 79.1519 3.41709C76.1882 4.34177 73.2245 5.50355 70.3793 6.6179C63.6695 9.24968 56.7225 11.9526 48.8746 11.9526C48.2819 11.9526 47.8077 11.4784 47.8077 10.9094C47.8077 10.3166 48.2582 9.84242 48.8272 9.81871C50.9374 9.72387 52.8816 8.63322 53.5454 7.13951C53.9959 6.14371 53.8062 5.07677 52.9764 4.08096C50.4869 1.06983 45.6027 2.16048 41.5957 3.41709C38.7032 4.34177 35.8343 5.45613 33.084 6.54677C26.303 9.20226 19.2612 11.9526 11.3185 11.9526C10.7257 11.9526 10.2515 11.4784 10.2515 10.8856C10.2515 10.2929 10.702 9.81871 11.2948 9.795C13.974 9.72387 15.8944 8.20645 16.3686 6.76016C16.7717 5.57467 16.2975 4.4129 15.0172 3.39338C11.6267 0.761607 5.77041 2.84806 1.90573 4.22322L1.57379 4.36548C1.00476 4.55516 0.412017 4.27064 0.19863 3.72532C0.00895223 3.18 0.293469 2.56354 0.838791 2.35016L1.17073 2.23161C5.5096 0.666769 12.0061 -1.65678 16.3212 1.78112C18.3128 3.36967 19.0478 5.43242 18.3603 7.49516C18.1469 8.15903 17.7912 8.77548 17.317 9.32081C22.462 8.41984 27.2514 6.54677 32.2541 4.60258C35.0519 3.51193 37.9682 2.37387 40.9082 1.42548C45.5316 -0.0445219 51.2693 -1.23001 54.5649 2.75322C55.8927 4.36548 56.2246 6.30968 55.4422 8.04048C55.2288 8.51468 54.968 8.94145 54.6124 9.34452C59.7337 8.46726 64.523 6.59419 69.5258 4.65C72.4184 3.51193 75.4058 2.35016 78.4406 1.40177C83.1351 -0.0682316 88.944 -1.2063 92.1922 2.82435C93.52 4.46032 93.8045 6.33338 92.9984 8.06419C92.785 8.51468 92.5242 8.91774 92.2159 9.2971C97.3372 8.39613 102.103 6.52306 107.106 4.57887C109.903 3.48822 112.82 2.35016 115.76 1.40177C120.383 -0.0682316 126.121 -1.25372 129.416 2.72951C130.744 4.34177 131.076 6.28597 130.294 8.01677C130.08 8.49097 129.82 8.91774 129.464 9.32081C134.585 8.44355 139.375 6.57048 144.377 4.62629C147.27 3.48822 150.257 2.32645 153.316 1.37806C158.01 -0.0682316 163.819 -1.23001 167.067 2.80064C168.395 4.46032 168.68 6.30968 167.874 8.04048C167.66 8.46726 167.399 8.89403 167.091 9.27339C172.212 8.37242 176.978 6.49935 181.981 4.55516C184.779 3.46451 187.695 2.32645 190.635 1.37806C193.361 0.524511 200.569 -1.77533 204.292 2.7058C205.643 4.31806 205.951 6.23855 205.169 7.99306C204.932 8.51468 204.6 9.01258 204.221 9.46306C209.65 8.79919 215.174 7.21064 220.485 4.76855C221.031 4.53145 221.647 4.76854 221.908 5.29016C222.145 5.83548 221.908 6.45193 221.386 6.71274C213.941 10.1269 206.046 11.9526 198.554 11.9526C197.961 11.9526 197.487 11.4784 197.487 10.9094C197.487 10.3166 197.937 9.84242 198.506 9.81871C200.617 9.72387 202.561 8.63322 203.225 7.13951C203.675 6.14371 203.462 5.07677 202.656 4.08096C200.166 1.09354 195.282 2.16048 191.275 3.41709C188.382 4.34177 185.514 5.45613 182.763 6.54677C175.959 9.22597 168.94 11.9763 160.974 12Z"
+                  fill="#ECE2BE" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row gx-3 justify-content-center">
+            <div class="col-lg-2">
+              <label for="formGroupExampleInput" class="form-label">Cruise Start Date</label>
+              <div class="position-relative have-icon"><input type="text" class="form-control rounded-0"
+                  id="formGroupExampleInput" placeholder="Example input placeholder">
+                <i class="ri-calendar-2-line"></i>
+              </div>
+            </div>
+
+            <div class="col col-lg-3">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Cabin &amp; Travelers
+                </label>
+                <a class="d-flex align-items-center justify-content-between form-control text-dark rounded-0" href="#">
+                  <div class="d-flex align-items-center"><i class="ri-user-3-line me-2"></i> <strong
+                      class="me-1">1</strong> room, <strong class="me-1">2</strong> Adult - <strong
+                      class="me-1">0</strong> child</div>
+                  <i class="ri-arrow-down-s-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">&nbsp;
+                </label>
+                <a href="./tour-detail.html" class="btn btn-primary">
+                  <span>
+                    Check rate
+                  </span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <div class="row mt-3 justify-content-center">
+            <div class="col-lg-4 text-center mb-2">
+              <h4 class="fs-3 title">Premium Balcony</h4>
+              <a data-fancybox="gallery3" href="https://lipsum.app/id/46/1600x1200"
+                class="position-relative d-block"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8cbisHgAHngKy8dJ9pAAAAABJRU5ErkJggg=="
+                  data-src="https://placehold.jp/600x400.png" class="w-100"></a>
+              <a class="justify-content-center btn btn-light d-flex align-items-center" type="button"
+                data-bs-toggle="modal" data-bs-target="#room-detail"><i class="ri-eye-fill me-1"></i> View cabin detail
+              </a>
+            </div>
+
+<div id="template" style="display: none;">
+  
+</div>
+<div style="display: none;">
+  <div id="one">
+    <strong>Free cancellation until 8 days prior to cruise date.</strong><p>Cancel within 4-7 days before cruise date: 50% charge.<br/>Cancel in the 3 days before cruise date or in case of no-show: 100% charge.</p>
+  </div>
+  <div id="two">
+    <strong>Free Date II.</strong><p>Cancel within 4-7 days before cruise date: 50% charge.</p>
+  </div>
+</div>
+            <div class="col-lg-8 d-flex flex-column align-items-center">
+              <div class="list-group h-100 border-0 rounded-0 w-100 align-items-center justify-content-center">                
+                <div class="list-group-item list-group-item-action list-rate">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 d-flex align-items-center">Flexible Rate <i class="ms-2 ri-file-info-fill tippy" data-template="one"></i></h5>
+                    <div class="d-flex align-items-center">
+                      <span class="text-dark fs-5 me-3">US$1,691</span>
+                      <a href="#" class="btn btn-md btn-success">
+                        Book now
+                      </a>
+                    </div>
+                  </div>
+                 
+                </div>
+               <div class="list-group-item list-group-item-action list-rate">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 d-flex align-items-center">Flexible Rate <i class="ms-2 ri-file-info-fill tippy" data-template="two"></i></h5>
+                    <div class="d-flex align-items-center">
+                      <span class="text-dark fs-5 me-3">US$1,691</span>
+                      <a href="#" class="btn btn-md btn-success">
+                        Book now
+                      </a>
+                    </div>
+                  </div>
+                 
+                </div>
+                 <div class="list-group-item border-0 fst-italic lead fs-6 text-end d-block w-100 list-rate">
+                  Rate for 2 Adults 0 Child on a private boat <br>
+                               <i class="ri-shield-check-line text-success fst-normal"></i>  Final Price. All taxes & fees included
+                </div>
+              </div>
+                <a href="#"
+                class="w-100 h-100 text-secondary mt-auto mb-5 d-flex flex-column align-items-center justify-content-center">
+                <i class="ri-ship-2-line mb-2 fs-1 lh-1"></i>
+                <span>Please select check-in date to show correct pricing</span>
+              </a>
+              </div>
+            <div class="col-12 text-center mt-3">
+              <!-- Button trigger modal -->
+
+            </div>
+          </div>
+        </div>
+    </section>
+   <!-- HTML to write -->
+{{!-- <a href="#" id="example">Hover over me</a> --}}
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip bs-tooltip-top" role="tooltip" >
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner">
+    Some tooltip text!
+  </div>
+</div>
+    <section class="py-5 gradient d-flex g-3 align-items-center justify-content-center text-center">
+      <span class="lead me-3">Need more information? Talk to our support team for prompt assistance!</span>
+      <a href="./booking.html" class="btn btn-primary">
+        <i class="ri-pencil-fill"></i>
+        <span>
+
+          SEND AN INQUIRY
+
+        </span>
+
+      </a>
+    </section>
+    <section class="has-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="title fs-5 accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Price Inclusions
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class=" accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="title fs-5 accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Price Exclusion
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class=" accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="title fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Cruise Policy
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mx-auto text-center">
+            <div class="box-trip">
+              <div class="top d-flex justify-content-between align-items-center">
+                <div class="ratting-trip">
+                  <div class="fs-6 mb-0">TripAdvisor Reviews</div>
+                  <div class="d-flex align-items-center">
+                    <div class="fs-5 text-trip mb-0 me-2">4.9</div>
+                    <div class="rattings d-flex justify-content-center my-3">
+                      <div class="item-rate mx-1">
+                      </div>
+                      <div class="item-rate mx-1">
+                      </div>
+                      <div class="item-rate mx-1">
+                      </div>
+                      <div class="item-rate mx-1">
+                      </div>
+                      <div class="item-rate mx-1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="members d-flex flex-column">
+                  <div class="all-members">
+                    <div class="avt rounded-circle">
+                      <i class="ri-map-pin-user-fill"></i>
+                      <img src="https://placehold.jp/52x52.png" alt="logo" class="img-fluid object-fit-cover" />
+                    </div>
+                    <div class="avt rounded-circle">
+                      <i class="ri-map-pin-user-fill"></i>
+                      <img src="https://placehold.jp/52x52.png" alt="logo" class="img-fluid object-fit-cover" />
+                    </div>
+                    <div class="avt rounded-circle">
+                      <i class="ri-map-pin-user-fill"></i>
+                      <img src="https://placehold.jp/52x52.png" alt="logo" class="img-fluid object-fit-cover" />
+                    </div>
+                    <div class="avt rounded-circle">
+                      <i class="ri-map-pin-user-fill"></i>
+                      <img src="https://placehold.jp/52x52.png" alt="logo" class="img-fluid object-fit-cover" />
+                    </div>
+                    <div class="avt rounded-circle">
+                      <i class="ri-map-pin-user-fill"></i>
+
+                    </div>
+                  </div>
+                  <small class="d-block mt-2">RECOMMENDED BY <span class="text-trip">2,559</span> TRAVELLERS</small>
+                </div>
+              </div>
+              <div class="body-trip">
+
+                <!-- Swiper -->
+                <div class="swiper slider-testimonial">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      {{>components/item-review}}
+                    </div>
+                    <div class="swiper-slide"> {{>components/item-review}}</div>
+                    <div class="swiper-slide"> {{>components/item-review}}</div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {{>layouts/footer2}}
+  <!-- Modal -->
+  <div class="modal fade" id="room-detail" tabindex="-1" aria-labelledby="room-detailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="room-detailLabel"><strong>Premium Balcony</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-7">
+              <!-- Swiper -->
+
+              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                class="swiper room-detail mb-3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper thumb-room-detail">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-5">
+              <h4 class="fs-5 title text-primary">DESCRIPTION</h4>
+              <p>Connecting room, private beach, star-gazing on sundeck. This is perfect for families & friends seeking
+                quality time in a cosy environment designed for making memories.</p>
+
+              <ul>
+                <li>Avg. room size: 16m2</li>
+                <li>Bed type: Double/ Twin / Triple share</li>
+                <li>Connecting cabins: Available</li>
+              </ul>
+              <h4 class="fs-5 title text-primary">AMENITIES</h4>
+              <p>Connecting room, private beach, star-gazing on sundeck. This is perfect for families & friends seeking
+                quality time in a cosy environment designed for making memories.</p>
+
+              <div class="d-flex mb-2 align-items-center"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8cbisHgAHngKy8dJ9pAAAAABJRU5ErkJggg=="
+                  data-src="https://placehold.jp/32x32.png" alt="logo" class="img-fluid me-2" />
+                <span class="text-center">
+                  Air Conditioner
+                </span>
+              </div>
+              <div class="d-flex mb-2 align-items-center"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8cbisHgAHngKy8dJ9pAAAAABJRU5ErkJggg=="
+                  data-src="https://placehold.jp/32x32.png" alt="logo" class="img-fluid me-2" />
+                <span class="text-center">
+                  Air Conditioner
+                </span>
+              </div>
+              <div class="d-flex mb-2 align-items-center"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8cbisHgAHngKy8dJ9pAAAAABJRU5ErkJggg=="
+                  data-src="https://placehold.jp/32x32.png" alt="logo" class="img-fluid me-2" />
+                <span class="text-center">
+                  Air Conditioner
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

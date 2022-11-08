@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Webpack Boilerplate Starter Template</title>
+    <meta name="description"
+        content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools." />
+    <meta name="keywords"
+        content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+</head>
+
+<body>
+    {{>layouts/header3}}
+    <div class="main mt-0">
+        <section class="has-padding">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 text-center">
+                        <div class="group-title justify-content-center flex-column d-flex">
+                            <h1 class="fs-1 title">The Au Co Cruise Reviews from TripAdvisor</h1>
+                            <div class="dec  mt-3">Get a glimpse of what our happy guests who embarked on the Halong Bay
+                                luxury cruise; the Au Co luxury cruise offered by Bhaya Cruises had to say about below.
+                            </div>
+
+                            <div class="d-flex align-items-center mx-auto badge rounded-pill bg-light px-4 mt-3">
+                                <div class="fs-5 text-trip mb-0 me-2">4.9</div>
+                                <div class="rattings d-flex justify-content-center my-3">
+                                    <div class="item-rate mx-1">
+                                    </div>
+                                    <div class="item-rate mx-1">
+                                    </div>
+                                    <div class="item-rate mx-1">
+                                    </div>
+                                    <div class="item-rate mx-1">
+                                    </div>
+                                    <div class="item-rate mx-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        {{>components/item-tes}}
+                    </div>
+                    <div class="col-lg-12">
+                        {{>components/item-tes}}
+                    </div>
+                    <div class="col-lg-12">
+                        {{>components/item-tes}}
+                    </div>
+                    <div class="col-lg-12">
+                        {{>components/item-tes}}
+                    </div>
+                    <div class="col-lg-12">
+                        {{>components/item-tes}}
+                    </div>
+                    <div class="col-lg-12">
+                        {{>components/item-tes}}
+                    </div>
+
+                    <div class="col-12 py-4">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </div>
+    {{>layouts/footer2}}
+</body>
+
+</html>
