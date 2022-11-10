@@ -19,7 +19,7 @@ if (swiperTour.length > 0) {
     modules: [Navigation, Pagination, Mousewheel, Thumbs, Lazy],
     slidesPerView: 1.2,
     autoHeight: false,
-    spaceBetween: 10,
+    spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

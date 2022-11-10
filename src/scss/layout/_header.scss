@@ -1,29 +1,17 @@
 .video-container {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
-  top: 0;
-  left: 0;
 
-  video,
-  iframe {
-    object-fit: cover;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 56.25vw;
-    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-    min-height: 100vh;
-    min-width: 177.77vh;
-    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+
+  // video,
+  // iframe {
+  //   object-fit: cover;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
 }
 
 // main {
@@ -40,6 +28,7 @@
     color: #888;
     margin: 8px 4px 0;
     font-size: 80%;
+    font-family: $font-title;
   }
 
   a:hover {
@@ -73,9 +62,11 @@
   .nav-item {
     &>.nav-link {
       text-transform: uppercase;
-      padding: 0.75rem 1rem;
-      margin: 0 1rem;
+      padding: 0.75rem;
+      margin: 0 0.75rem;
+      font-family: $font-title;
       color: #fff;
+      font-size: 1rem;
     }
 
     &:last-child {
@@ -119,6 +110,7 @@
 .dropdown-menu {
   border: 0;
   background-color: rgba($color: #fff, $alpha: 0.92);
+  font-family: $font-title;
 
   .dropdown-item {
     padding: 0.5rem 1rem;
@@ -140,7 +132,7 @@
 
   a {
     color: #fff;
-    font-family: "Viaoda Libre", cursive;
+    font-family: $font-title;
     line-height: 1.5;
   }
 }
