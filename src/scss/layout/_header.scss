@@ -45,7 +45,7 @@
 }
 
 .nav-cruise {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -83,8 +83,31 @@
       }
     }
   }
-}
+  &.fade-in {
+    background-color: rgba(31, 30, 27, 1) !important;
+    position: fixed;
+    animation: smoothScroll 1s forwards;
+    box-shadow: 0px 0px 60px rgba(150, 150, 150, 0.08),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.2);
+    .lang{
+      position: absolute;
+      top: 1.25rem;
+      right: 5rem;
+      left: auto;
+      width: 4rem;
+    }
+  }
 
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
 @include media-breakpoint-up(lg) {
   .dropdown-menu {
     display: block;

@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 .swiper-pagination-bullet-active {
-  background: $primary !important;
+  background: rgba(31, 30, 27, .6) !important;
 }
 .slider-testimonial {
   padding-bottom: 3rem !important;
@@ -68,5 +68,10 @@
 }
 
 .swiper-tours {
+  padding: 10px 10px 10px 10px !important;
   padding-bottom: 1rem !important;
+  margin: 0 -10px !important;
+  .swiper-slide{
+    height: auto;
+  }
 }

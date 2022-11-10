@@ -8,7 +8,7 @@
 
 .group-title {
   max-width: 680px;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.5rem;
 }
 
 .card {
@@ -17,22 +17,20 @@
   align-items: flex-start;
   padding: 0;
   /* Theme/White/Default */
-
+ height: 100%;
   background: #ffffff;
   box-shadow: 0px 0px 60px rgba(150, 150, 150, 0.08),
-    0px 3px 8px -1px rgba(50, 50, 71, 0.05);
-  border-radius: 12px;
+    0px 3px 8px -1px rgba(50, 50, 71, 0.4);
+  border-radius: 0;
   border: 0;
 
   .img {
     // padding: 1rem 1rem 0;
     padding: 0;
-
-    height: 100%;
   }
 
   img {
-    border-radius: 8px 8px 0 0;
+    border-radius:  0;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -41,6 +39,9 @@
 
   .card-body {
     padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .card-footer {
@@ -51,34 +52,55 @@
 
   .subtitle {
     text-transform: uppercase;
-    color: $primary;
+    color: rgba(31, 30, 27, 1);
     font-family: $font-title;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    font-size: .85rem;
+    font-weight: 700;
+    padding:  1rem 0 2rem;
+    position: relative;
+    text-align: center;
+    &::after{
+      position: absolute;
+      height: 2px;
+      width: 32px;
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom:1rem;
+      background-color: rgba(31, 30, 27, 1);
+    }
   }
 
   .card-title {
+    text-align: center;
     color: #16140d;
     line-height: 1.4;
     display: block;
     font-family: $font-title;
-    font-size: .95rem;
+    font-size: .85rem;
+    letter-spacing: 1px;
+    height: 100%;
     // letter-spacing: 1px;
   }
 
   .card-text {
     color: rgba(31, 30, 27, 1);
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .text-mute {
-    text-decoration-line: line-through;
+    text-decoration: line-through;
   }
-
+.all-price{
+  font-family: $font-title;
+  font-size: 90%;
+}
   .text-price {
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 1rem;
     color: $primary;
   }
 }
@@ -88,33 +110,45 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 12px 8px;
-  font-size: 10px;
+  padding: 12px 24px;
   gap: 4px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  min-height: 38px;
+  font-weight: 400;
   text-transform: uppercase;
   background: $primary;
-  box-shadow: 0px 4px 0px #a39050;
-  border-radius: 6px;
+  border-radius: 4px;
   transition: $transation;
+  background: rgb(31, 30, 27);    
+  color: #fff;
+  font-size: .6rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: $font-title;
+
   border: 0;
   color: #fff;
   &.btn-lg {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   &.btn-md {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   &:hover {
-    padding: 12px 12px 6px;
-    background: #b4a367;
-    box-shadow: 0px 4px 0px 0 #b4a367;
-    color: #fff;
+    background: rgb(31, 30, 27);    
+    color: $primary;
   }
 
   i {
     font-weight: normal;
+  }
+  &.outline{
+    border:1px solid  rgb(31, 30, 27);   
+    color: rgb(31, 30, 27);
+    &:hover{
+      background: rgb(31, 30, 27);    
+    color: $primary;
+    }
   }
 }
 
@@ -127,16 +161,17 @@
 }
 
 .gradient {
-  background: #fffef8;
+  background: #f2f2f2 ;
 
   @include media-breakpoint-up(lg) {
-    background: linear-gradient(
-        105.16deg,
-        #fffaee 17.27%,
-        rgba(255, 255, 255, 0.536458) 44.28%,
-        #ffffff 78.27%
-      ),
-      #fffef8;
+    // background: linear-gradient(
+    //     105.16deg,
+    //     #fffaee 17.27%,
+    //     rgba(255, 255, 255, 0.536458) 44.28%,
+    //     #ffffff 78.27%
+    //   ),
+    //   #fffef8;
+    background: #f2f2f2 ;
   }
 
   backdrop-filter: blur(50px);
@@ -144,7 +179,7 @@
 
 .img-transform-1 {
   transform: rotate(-3deg);
-  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 60px rgb(150 150 150 / 8%), 0px 3px 8px -1px rgb(50 50 71 / 40%);
   max-width: 240px;
   position: relative;
   left: 2rem;
@@ -160,7 +195,7 @@
 }
 
 .img-transform-2 {
-  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 60px rgb(150 150 150 / 8%), 0px 3px 8px -1px rgb(50 50 71 / 40%);
   transform: rotate(5deg);
   max-width: 180px;
 
@@ -181,4 +216,14 @@
   padding: 10px;
   color: beige;
   background-color: red;
+}
+.name-time{
+  font-family: $font-title;
+}
+.img-cover{
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

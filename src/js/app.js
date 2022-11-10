@@ -170,3 +170,42 @@ function classToggle() {
 document
   .querySelector(".navbar-toggler")
   .addEventListener("click", classToggle);
+
+  // objectfit cover
+  var userAgent, ieReg, ie;
+userAgent = window.navigator.userAgent;
+ieReg = /msie|Trident.*rv[ :]*11\./gi;
+ie = ieReg.test(userAgent);
+
+if(ie) {
+  $(".img-cover").each(function () {
+    var $container = $(this),
+        imgUrl = $container.find("img").prop("src");
+    if (imgUrl) {
+      $container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("custom-object-fit");
+    }
+  });
+}
+
+// fix nav
+ //   scroll
+ let scrollpos = window.scroll;
+ const header = document.querySelector(".header");
+ const stickyMenu = document.querySelector('.nav-cruise');
+ const headerHeight = header.offsetHeight;
+const stickyMenuHeight = stickyMenu.offsetHeight;
+
+
+ const add_class_on_scroll = () => stickyMenu.classList.add("fade-in");
+ const remove_class_on_scroll = () => stickyMenu.classList.remove("fade-in");
+ window.addEventListener("scroll", e => {
+  scrollpos = window.scrollY;
+  //   const padHeight = header.outerHeight;
+  if (scrollpos >= headerHeight) {
+    add_class_on_scroll();
+    // document.body.style.paddingTop = header_height + 'px'
+  }
+  else { remove_class_on_scroll(); 
+    // document.body.style.paddingTop = '0px'; 
+  }
+})

@@ -1,10 +1,11 @@
 .footer {
   padding: 4rem 0;
   margin-top: 4rem;
-  background: #f9f9f9;
+  background: #545454;
+  color: #eee;
 
   a {
-    color: rgba($color: #000000, $alpha: 0.55);
+    color: rgba($color: #fff, $alpha: 1);
     display: block;
     text-align: left;
     text-decoration: none;
@@ -18,6 +19,22 @@
     &:hover {
       color: $primary;
     }
+  }
+  .title{
+    color: #fff;
+  }
+  .form-text{
+    color: rgb(226, 226, 205);
+  }
+  .btn-primary{
+    height: 50px;
+    &:hover{
+      color: $primary !important;
+    }
+  }
+  h5{
+    margin-bottom: 1rem;
+    font-weight: 600 !important;
   }
 }
 
