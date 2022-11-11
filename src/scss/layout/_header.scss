@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-
+background: rgb(31, 30, 27);
 
   // video,
   // iframe {
@@ -49,7 +49,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 1020;
   background: linear-gradient(#2a2a2a, transparent);
   background-color: transparent !important;
 
@@ -63,17 +63,24 @@
     &>.nav-link {
       text-transform: uppercase;
       padding: 0.75rem;
-      margin: 0 0.75rem;
+      margin: 0 .25rem;
       font-family: $font-title;
       color: #fff;
-      font-size: 1rem;
+      font-size: .96rem;
+      @include media-breakpoint-up(xxl) { 
+        margin: 0 .75rem;
+       }
     }
 
     &:last-child {
       .nav-link {
+        font-weight: 700;
+        font-size: 68%;
+        letter-spacing: 1px;
         color: $primary;
         border: 1px solid $primary;
         background: rgba($color: #000000, $alpha: 0.5);
+        text-align: center;
 
         &:hover {
           background: $primary;
@@ -89,12 +96,28 @@
     animation: smoothScroll 1s forwards;
     box-shadow: 0px 0px 60px rgba(150, 150, 150, 0.08),
     0px 3px 8px -1px rgba(50, 50, 71, 0.2);
+   @include media-breakpoint-up(xl) {
+    justify-content: space-around;
+    padding-right: 5rem;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding-right: 0;
+    }
     .lang{
       position: absolute;
       top: 1.25rem;
       right: 5rem;
       left: auto;
       width: 4rem;
+      @include media-breakpoint-up(xl) { 
+        top: 2.2rem;
+        right: 1rem;
+      }
+      @include media-breakpoint-up(xxl) { 
+        top: 1.25rem;
+      right: 5rem;
+      left: auto;
+       }
     }
   }
 
@@ -143,7 +166,10 @@
 // list-boat
 .list-boat {
   // border-top: 1px solid #fff;
-  position: absolute;
+  position: relative;
+  @include media-breakpoint-up(xl){
+    position: absolute;
+  }
   z-index: 999;
   width: 100%;
   bottom: 0;
@@ -162,9 +188,11 @@
 
 // list tienich
 .cruise-icon {
-  position: absolute;
+  position: relative;
+  @include media-breakpoint-up(xl){
+    position: absolute;
+  }
   z-index: 999;
-
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -200,4 +228,9 @@
 
 .nav-bgr {
   background-color: #2a2a2a !important;
+}
+.cruise-icon-inner{
+  .swiper-wrapper{
+    justify-content: center;
+  }
 }

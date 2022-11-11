@@ -52,14 +52,15 @@
 
   .subtitle {
     text-transform: uppercase;
-    color: rgba(31, 30, 27, 1);
+    color: rgba(31, 30, 27, 1) !important;
     font-family: $font-title;
     letter-spacing: 2px;
-    font-size: .85rem;
+    font-size: .85rem !important;
     font-weight: 700;
     padding:  1rem 0 2rem;
     position: relative;
     text-align: center;
+    line-height: 1.5;
     &::after{
       position: absolute;
       height: 2px;
@@ -75,20 +76,20 @@
 
   .card-title {
     text-align: center;
-    color: #16140d;
-    line-height: 1.4;
+    color: rgba(31, 30, 27, 1) !important;
+    line-height: 1.5;
     display: block;
     font-family: $font-title;
-    font-size: .85rem;
+    font-size: .85rem !important;
     letter-spacing: 1px;
-    height: 100%;
+   
     // letter-spacing: 1px;
   }
 
   .card-text {
-    color: rgba(31, 30, 27, 1);
-    font-size: 1rem;
+    color: rgba(31, 30, 27, .8);
     margin-bottom: 1rem;
+    height: 100%;
   }
 
   .text-mute {
@@ -129,14 +130,14 @@
   border: 0;
   color: #fff;
   &.btn-lg {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   &.btn-md {
     font-size: 0.6rem;
   }
   &:hover {
     background: rgb(31, 30, 27);    
-    color: $primary;
+    color: $primary !important;
   }
 
   i {
