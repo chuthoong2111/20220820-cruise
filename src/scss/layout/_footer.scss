@@ -4,12 +4,37 @@
   background: #545454;
   color: #eee;
 
+  .col-6 {
+    .list-inline {
+      a {
+        i {
+
+          border: 1px solid #fff;
+          border-radius: 50%;
+          width: 18px;
+          height: 18px;
+          padding: 6px;
+        }
+
+        &:hover {
+          i {
+
+            background: $primary;
+            color: #fff;
+          }
+        }
+      }
+
+    }
+  }
+
   a {
     color: rgba($color: #fff, $alpha: 1);
     display: block;
     text-align: left;
     text-decoration: none;
     margin: 0.5rem 0;
+
 
     &.parent {
       color: #222;
@@ -18,29 +43,38 @@
 
     &:hover {
       color: $primary;
+
+
     }
   }
-  .title{
+
+  .title {
     color: #fff;
   }
-  .form-text{
+
+  .form-text {
     color: rgb(226, 226, 205);
   }
-  .btn-primary{
+
+  .btn-primary {
     height: 50px;
-    &:hover{
+
+    &:hover {
       color: $primary !important;
     }
   }
-  h5{
+
+  h5 {
     margin-bottom: 1rem;
   }
-  .form-request .label-control{
+
+  .form-request .label-control {
     background: #545454 !important;
-  color: #eee !important;
+    color: #eee !important;
   }
-  .form-request .form-control-edit{
-   color:#eee !important;
+
+  .form-request .form-control-edit {
+    color: #eee !important;
   }
 }
 
@@ -48,14 +82,4 @@
   padding: 3rem 0;
   color: #bbb;
   font-size: 0.8rem;
-}
-
-.link-social a {
-  margin-right: 1rem;
-  color: #222;
-  font-size: 1.5rem;
-
-  &:hover {
-    color: $primary;
-  }
 }

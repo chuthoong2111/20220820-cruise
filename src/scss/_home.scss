@@ -17,7 +17,7 @@
   align-items: flex-start;
   padding: 0;
   /* Theme/White/Default */
- height: 100%;
+  height: 100%;
   background: #ffffff;
   box-shadow: 0px 0px 60px rgba(150, 150, 150, 0.08),
     0px 3px 8px -1px rgba(50, 50, 71, 0.4);
@@ -30,7 +30,7 @@
   }
 
   img {
-    border-radius:  0;
+    border-radius: 0;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -57,11 +57,12 @@
     letter-spacing: 2px;
     font-size: .85rem !important;
     font-weight: 700;
-    padding:  1rem 0 2rem;
+    padding: 1rem 0 2rem;
     position: relative;
     text-align: center;
     line-height: 1.5;
-    &::after{
+
+    &::after {
       position: absolute;
       height: 2px;
       width: 32px;
@@ -69,7 +70,7 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom:1rem;
+      bottom: 1rem;
       background-color: rgba(31, 30, 27, 1);
     }
   }
@@ -82,7 +83,11 @@
     font-family: $font-title;
     font-size: .85rem !important;
     letter-spacing: 1px;
-   
+
+    &:hover {
+      color: $primary !important;
+    }
+
     // letter-spacing: 1px;
   }
 
@@ -95,10 +100,20 @@
   .text-mute {
     text-decoration: line-through;
   }
-.all-price{
-  font-family: $font-title;
-  font-size: 90%;
-}
+
+  .all-price {
+    font-family: $font-title;
+    font-size: 90%;
+
+    .d-flex.flex-row {
+      gap: 4px;
+
+      * {
+        font-size: 90%;
+      }
+    }
+  }
+
   .text-price {
     font-weight: 400;
     font-size: 1rem;
@@ -119,7 +134,7 @@
   background: $primary;
   border-radius: 4px;
   transition: $transation;
-  background: rgb(31, 30, 27);    
+  background: rgb(31, 30, 27);
   color: #fff;
   font-size: .6rem;
   line-height: 1;
@@ -129,26 +144,31 @@
 
   border: 0;
   color: #fff;
+
   &.btn-lg {
     font-size: .8rem;
   }
+
   &.btn-md {
     font-size: 0.6rem;
   }
+
   &:hover {
-    background: rgb(31, 30, 27);    
+    background: rgb(31, 30, 27);
     color: $primary !important;
   }
 
   i {
     font-weight: normal;
   }
-  &.outline{
-    border:1px solid  rgb(31, 30, 27);   
+
+  &.outline {
+    border: 1px solid rgb(31, 30, 27);
     color: rgb(31, 30, 27);
-    &:hover{
-      background: rgb(31, 30, 27);    
-    color: $primary;
+
+    &:hover {
+      background: rgb(31, 30, 27);
+      color: $primary;
     }
   }
 }
@@ -162,7 +182,7 @@
 }
 
 .gradient {
-  background: #f2f2f2 ;
+  background: #f2f2f2;
 
   @include media-breakpoint-up(lg) {
     // background: linear-gradient(
@@ -172,7 +192,7 @@
     //     #ffffff 78.27%
     //   ),
     //   #fffef8;
-    background: #f2f2f2 ;
+    background: #f2f2f2;
   }
 
   backdrop-filter: blur(50px);
@@ -213,16 +233,19 @@
     max-width: 100%;
   }
 }
+
 #warning {
   padding: 10px;
   color: beige;
   background-color: red;
 }
-.name-time{
+
+.name-time {
   font-family: $font-title;
 }
-.img-cover{
-  img{
+
+.img-cover {
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;

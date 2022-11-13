@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-background: rgb(31, 30, 27);
+  background: rgb(31, 30, 27);
 
   // video,
   // iframe {
@@ -45,15 +45,18 @@ background: rgb(31, 30, 27);
 }
 
 .nav-cruise {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1020;
-  background: linear-gradient(#2a2a2a, transparent);
-  background-color: transparent !important;
+  background-color: #2a2a2a;
 
-  @include media-breakpoint-up(xl) {}
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    background: linear-gradient(#2a2a2a, transparent) !important;
+    background-color: transparent;
+  }
 
   .navbar-collapse {
     flex-grow: 0;
@@ -67,9 +70,20 @@ background: rgb(31, 30, 27);
       font-family: $font-title;
       color: #fff;
       font-size: .96rem;
-      @include media-breakpoint-up(xxl) { 
+
+      @include media-breakpoint-up(xxl) {
         margin: 0 .75rem;
-       }
+      }
+
+      &:hover {
+        color: $primary;
+      }
+
+
+    }
+
+    &:hover>a {
+      color: $primary;
     }
 
     &:last-child {
@@ -90,38 +104,46 @@ background: rgb(31, 30, 27);
       }
     }
   }
+
   &.fade-in {
     background-color: rgba(31, 30, 27, 1) !important;
     position: fixed;
     animation: smoothScroll 1s forwards;
     box-shadow: 0px 0px 60px rgba(150, 150, 150, 0.08),
-    0px 3px 8px -1px rgba(50, 50, 71, 0.2);
-   @include media-breakpoint-up(xl) {
-    justify-content: space-around;
-    padding-right: 5rem;
+      0px 3px 8px -1px rgba(50, 50, 71, 0.2);
+
+    @include media-breakpoint-up(xl) {
+      justify-content: space-around;
+      padding-right: 5rem;
     }
+
     @include media-breakpoint-up(xxl) {
       padding-right: 0;
     }
-    .lang{
-      position: absolute;
+
+
+  }
+
+  .lang {
+    position: absolute;
+    top: 1.25rem;
+    right: 5rem;
+    left: auto;
+    width: 4rem;
+
+    @include media-breakpoint-up(xl) {
+      top: 2.2rem;
+      right: 1rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
       top: 1.25rem;
       right: 5rem;
       left: auto;
-      width: 4rem;
-      @include media-breakpoint-up(xl) { 
-        top: 2.2rem;
-        right: 1rem;
-      }
-      @include media-breakpoint-up(xxl) { 
-        top: 1.25rem;
-      right: 5rem;
-      left: auto;
-       }
     }
   }
-
 }
+
 @keyframes smoothScroll {
   0% {
     transform: translateY(-40px);
@@ -131,6 +153,7 @@ background: rgb(31, 30, 27);
     transform: translateY(0px);
   }
 }
+
 @include media-breakpoint-up(lg) {
   .dropdown-menu {
     display: block;
@@ -139,7 +162,8 @@ background: rgb(31, 30, 27);
     transform: translateY(20%);
     transition: all 0.5s;
     min-width: 100%;
-    &.datepicker{
+
+    &.datepicker {
       visibility: visible;
       opacity: 1;
       transform: translateY(0%);
@@ -167,9 +191,11 @@ background: rgb(31, 30, 27);
 .list-boat {
   // border-top: 1px solid #fff;
   position: relative;
-  @include media-breakpoint-up(xl){
+
+  @include media-breakpoint-up(xl) {
     position: absolute;
   }
+
   z-index: 999;
   width: 100%;
   bottom: 0;
@@ -189,9 +215,11 @@ background: rgb(31, 30, 27);
 // list tienich
 .cruise-icon {
   position: relative;
-  @include media-breakpoint-up(xl){
+
+  @include media-breakpoint-up(xl) {
     position: absolute;
   }
+
   z-index: 999;
   bottom: 0;
   left: 50%;
@@ -229,8 +257,23 @@ background: rgb(31, 30, 27);
 .nav-bgr {
   background-color: #2a2a2a !important;
 }
-.cruise-icon-inner{
-  .swiper-wrapper{
-    justify-content: center;
+
+.cruise-icon-inner {
+  .swiper-slide {
+    .d-flex {
+      flex-direction: column;
+
+      @include media-breakpoint-up(xl) {
+        flex-direction: row;
+      }
+    }
+
+    .fs-5 {
+      font-size: 1rem !important;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 1.25rem !important;
+      }
+    }
   }
 }

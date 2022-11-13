@@ -1,9 +1,6 @@
-  {{>header-component/nav.hbs}}
+{{>header-component/nav.hbs}}
 <div class="header video-container">
-<img
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8cbisHgAHngKy8dJ9pAAAAABJRU5ErkJggg=="
-    data-src="https://placehold.jp/1600x900.png" class="w-100 h-100 object-fit-cover">
-
+  <img src="https://placehold.jp/1600x600.png" class="w-100 h-100 object-fit-cover">
   <div class="cruise-icon list-boat">
     <div class="swiper cruise-icon-inner">
       <div class="swiper-wrapper">
@@ -23,12 +20,20 @@
           <div class="d-flex flex-column align-items-center justify-content-center">
             {{>header-component/oneicon}}</div>
         </div>
-       
+        <div class="swiper-slide">
+          <div class="d-flex flex-column align-items-center justify-content-center">
+            {{>header-component/oneicon}}</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="d-flex flex-column align-items-center justify-content-center">
+            {{>header-component/oneicon}}</div>
+        </div>
+
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
   </div>
-  
+
 
 </div>

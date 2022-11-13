@@ -156,13 +156,13 @@ if (cruiseiconInner.length > 0) {
         slidesPerView: 2,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1080: {
         slidesPerView: 4,
       },
       1280: {
-        slidesPerView: 5,
+        slidesPerView: 4,
       },
     },
     navigation: {
