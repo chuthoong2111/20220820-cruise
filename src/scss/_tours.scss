@@ -314,6 +314,7 @@
 
 }
 
-.bg-accodition .accordion-button:not(.collapsed) {
-  border-radius: 2px;
+.accordion-header,
+.bg-accodition .accordion-button {
+  border-radius: 2px !important;
 }
