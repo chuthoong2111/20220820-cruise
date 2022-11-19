@@ -259,12 +259,21 @@
 }
 
 .cruise-icon-inner {
+  .swiper-wrapper{
+    justify-content: space-between;
+    @include media-breakpoint-up(xl) {
+      justify-content: inherit;
+     }
+  }
   .swiper-slide {
     .d-flex {
       flex-direction: column;
-
+      max-width: 120px;
+      text-align: center;
+      margin: 0 auto;
       @include media-breakpoint-up(xl) {
         flex-direction: row;
+        max-width: inherit;
       }
     }
 
