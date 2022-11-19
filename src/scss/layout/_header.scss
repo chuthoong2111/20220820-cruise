@@ -21,14 +21,17 @@
 .lang {
   display: flex;
   justify-content: flex-end;
-  width: 90%;
   align-items: center;
 
   >* {
-    color: #888;
-    margin: 8px 4px 0;
-    font-size: 80%;
+    color: #999;
+    font-size: 86%;
     font-family: $font-title;
+  }
+
+  a {
+
+    padding: 4px 8px;
   }
 
   a:hover {
@@ -86,7 +89,7 @@
       color: $primary;
     }
 
-    &:last-child {
+    &.btn-booking {
       .nav-link {
         font-weight: 700;
         font-size: 68%;
@@ -102,6 +105,10 @@
           border: 1px solid rgba($color: #000000, $alpha: 0.2);
         }
       }
+    }
+
+    &.lang-item {
+      right: -5rem;
     }
   }
 
@@ -124,12 +131,18 @@
 
   }
 
+  .dropdown-item.active,
+  .dropdown-item:active {
+    background-color: var(--bs-dropdown-link-hover-bg);
+    color: $primary;
+  }
+
   .lang {
     position: absolute;
     top: 1.25rem;
     right: 5rem;
     left: auto;
-    width: 4rem;
+    width: 6rem;
 
     @include media-breakpoint-up(xl) {
       top: 2.2rem;
@@ -259,18 +272,21 @@
 }
 
 .cruise-icon-inner {
-  .swiper-wrapper{
+  .swiper-wrapper {
     justify-content: space-between;
+
     @include media-breakpoint-up(xl) {
       justify-content: inherit;
-     }
+    }
   }
+
   .swiper-slide {
     .d-flex {
       flex-direction: column;
       max-width: 120px;
       text-align: center;
       margin: 0 auto;
+
       @include media-breakpoint-up(xl) {
         flex-direction: row;
         max-width: inherit;

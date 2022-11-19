@@ -1,22 +1,23 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-xl nav-cruise d-flex flex-column">
-    <div class="lang">
-        <i class="bi bi-globe"></i>
+    <div class="lang d-flex d-xl-none">
+        <i class="ri-global-line"></i>
         <a href="#" class="active">EN</a>
         <span>|</span>
         <a href="#">VN</a>
     </div>
     <div class="container-fluid justify-content-between justify-content-lg-center">
         <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt="logo" class="lazy" /></a>
-       
-         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-        <div class="hamburger-toggle">
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </button>
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+            <div class="hamburger-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav justify-content-center mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
@@ -75,8 +76,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./about.html">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn-booking">
                     <a class="nav-link" href="./booking.html">Book your cruise</a>
+                </li>
+                <li class="nav-item dropdown d-none d-xl-block lang-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        VN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item active" href="./gallery.html">VN</a></li>
+                        <li><a class="dropdown-item" href="./gallery.html">EN</a></li>
+                    </ul>
                 </li>
             </ul>
 
