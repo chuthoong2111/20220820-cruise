@@ -90,6 +90,8 @@
     }
 
     &.btn-booking {
+      margin-left: 2rem;
+
       .nav-link {
         font-weight: 700;
         font-size: 68%;
@@ -108,7 +110,11 @@
     }
 
     &.lang-item {
-      right: -5rem;
+      right: -2rem;
+
+      @include media-breakpoint-up(xxl) {
+        right: -5rem;
+      }
     }
   }
 
@@ -183,6 +189,7 @@
     transform: translateY(20%);
     transition: all 0.5s;
     min-width: 100%;
+    box-shadow: 0px 0px 60px rgb(150 150 150 / 8%), 0px 3px 8px -1px rgb(50 50 71 / 40%);
 
     &.datepicker {
       visibility: visible;
@@ -200,7 +207,7 @@
 
 .dropdown-menu {
   border: 0;
-  background-color: rgba($color: #fff, $alpha: 0.92);
+  background-color: rgba($color: #fff, $alpha: 1);
   font-family: $font-title;
 
   .dropdown-item {
