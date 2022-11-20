@@ -75,7 +75,7 @@
       font-size: .96rem;
 
       @include media-breakpoint-up(xxl) {
-        margin: 0 .75rem;
+        margin: 0 .5rem;
       }
 
       &:hover {
@@ -90,7 +90,10 @@
     }
 
     &.btn-booking {
-      margin-left: 2rem;
+      @include media-breakpoint-up(lg) {
+        margin-left: 2rem;
+      }
+
 
       .nav-link {
         font-weight: 700;
@@ -289,6 +292,7 @@
 .cruise-icon-inner {
   .swiper-wrapper {
     justify-content: space-between;
+    align-items: flex-end;
 
     @include media-breakpoint-up(xl) {
       justify-content: inherit;

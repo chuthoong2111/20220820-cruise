@@ -69,8 +69,8 @@
   }
 
   .form-request .label-control {
-    background: #545454 !important;
-    color: #eee !important;
+    background: #fff !important;
+    color: #777 !important;
     transform: translateY(-20px) scale(0.9);
     left: 10px;
     color: #0050a2;
@@ -82,7 +82,8 @@
   }
 
   .form-request .form-control-edit {
-    color: #eee !important;
+    color: #333 !important;
+    background-color: #fff;
   }
 
 }

@@ -194,3 +194,10 @@ window.addEventListener("scroll", e => {
     // document.body.style.paddingTop = '0px'; 
   }
 })
+
+
+const pos = document.querySelector(".bgr-paralax .p-5");
+pos.addEventListener("mousemove", e => {
+  pos.style.setProperty('--x', e.clientX + "px");
+  pos.style.setProperty('--y', e.clientY + "px");
+})

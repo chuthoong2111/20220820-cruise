@@ -254,8 +254,8 @@
 
 .fixed-chat {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 90px;
+  right: 28px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -263,17 +263,17 @@
   z-index: 1010;
 
   a {
-    background-color: #fff;
-    color: #aaa;
+    background-color: #767676;
+    color: #fff;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
+    font-size: 32px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 4px 12px 0px;
 
     &:nth-child(1):hover {
       background: #25d366;
@@ -286,4 +286,28 @@
     }
   }
 
+}
+
+.bgr-paralax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    background: #fff1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background: rgba($color: #fff, $alpha: .42);
+    backdrop-filter: blur(18px);
+    position: absolute;
+  }
+
+  .p-5 {
+    color: #111;
+    transform: translateX(calc(var(--x)/100)) translateY(calc(var(--y)/40));
+  }
 }
