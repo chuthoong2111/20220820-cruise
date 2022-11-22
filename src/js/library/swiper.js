@@ -1,5 +1,6 @@
 // swiper
 // core version + navigation, pagination modules:
+import { auto } from "@popperjs/core";
 import Swiper, {
   Navigation,
   Pagination,
@@ -125,17 +126,14 @@ if (swiperGallery.length > 0) {
 const blogSlider = document.querySelectorAll('.blog-slider');
 if (blogSlider.length > 0) {
   const swiper5 = new Swiper(".blog-slider", {
-    modules: [Pagination, Mousewheel, EffectFade, Autoplay],
+    modules: [Pagination, Autoplay],
     spaceBetween: 30,
-    effect: "fade",
-    loop: true,
-    direction: "vertical",
-    autoplay: true,
+    loop: false,
+    autoHeight: false,
+    // direction: "vertical",
+    autoplay: false,
     delay: 6000,
-    mousewheel: {
-      invert: false,
-    },
-    // autoHeight: true,
+
     pagination: {
       el: ".blog-slider__pagination",
       clickable: true,

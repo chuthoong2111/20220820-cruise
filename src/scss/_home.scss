@@ -293,21 +293,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
+  padding-top: 140px;
+  padding-bottom: 140px;
   &::before {
-    background: #fff1;
+    // background: #fff1;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    content: "";
-    background: rgba($color: #fff, $alpha: .42);
-    backdrop-filter: blur(18px);
+    // content: "";
+    // background: rgba($color: #fff, $alpha: .42);
+    // backdrop-filter: blur(18px);
     position: absolute;
   }
 
   .p-5 {
-    color: #111;
+    background: rgb(0 0 0 / 56%);
+    color: #fff !important;
     transform: translateX(calc(var(--x)/100)) translateY(calc(var(--y)/40));
+     .title {
+      color: #fff;
+      &::after{
+        background-color: #fff;
+      }
+    }
   }
 }
