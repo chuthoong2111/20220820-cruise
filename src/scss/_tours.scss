@@ -262,9 +262,24 @@
 
   .item {
     color: $dark;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.2rem;
-
+    text-align: center;
+    flex-basis: 50%;
+    max-width: 50%;
+    &:first-child{
+      flex-basis: 100%;
+      max-width: 100%;
+      @include media-breakpoint-up(lg){
+        flex-basis: auto;
+        max-width: inherit;
+      }
+    }
+    @include media-breakpoint-up(lg){
+    flex-basis: auto;
+    max-width: inherit;
+    padding: 2rem;
+    }
     &.active {
       background: #fff;
 
