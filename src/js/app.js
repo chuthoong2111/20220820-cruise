@@ -32,43 +32,7 @@ import "bootstrap/js/dist/tab";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css"; // optional for styling
 import "tippy.js/themes/light.css";
-//   b-lazy
-// import LazyLoad from "vanilla-lazyload";
-const logEvent = (eventName, element) => {
-  console.log(
-    Date.now(),
-    eventName,
-    element.getAttribute("data-src"),
-    element.getAttribute("src")
-  );
-};
 
-const lazyLoadOptions = {
-  elements_selector: ".lazy",
-  to_webp: true,
-
-  callback_enter: (element) => {
-    logEvent("ENTERED", element);
-  },
-  callback_load: (element) => {
-    logEvent("LOADED", element);
-  },
-  callback_set: (element) => {
-    logEvent("SET", element);
-  },
-  callback_error: (element) => {
-    logEvent("ERROR", element);
-    element.src = "https://placehold.it/220x280?text=Placeholder";
-  },
-};
-
-const createLazyLoadInstance = () => {
-  return new LazyLoad(lazyLoadOptions);
-};
-
-export default () => {
-  document.addEventListener("DOMContentLoaded", createLazyLoadInstance);
-};
 /* Demo JS */
 import "./home.js";
 // Initialise Carousel
@@ -202,53 +166,3 @@ pos.addEventListener("mousemove", e => {
   pos.style.setProperty('--y', e.clientY + "px");
 })
 // 
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages;    
-
-  if ("IntersectionObserver" in window) {
-    lazyloadImages = document.querySelectorAll(".lazy");
-    var imageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          var image = entry.target;
-          image.src = image.dataset.src;
-          image.classList.remove("lazy");
-          imageObserver.unobserve(image);
-        }
-      });
-    });
-
-    lazyloadImages.forEach(function(image) {
-      imageObserver.observe(image);
-    });
-  } else {  
-    var lazyloadThrottleTimeout;
-    lazyloadImages = document.querySelectorAll(".lazy");
-    
-    function lazyload () {
-      if(lazyloadThrottleTimeout) {
-        clearTimeout(lazyloadThrottleTimeout);
-      }    
-
-      lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-            }
-        });
-        if(lazyloadImages.length == 0) { 
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-      }, 20);
-    }
-
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
-  }
-})
-

@@ -255,7 +255,7 @@
 .fixed-chat {
   position: fixed;
   bottom: 90px;
-  right: 28px;
+  right: 25px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -295,6 +295,7 @@
   position: relative;
   padding-top: 140px;
   padding-bottom: 140px;
+
   &::before {
     // background: #fff1;
     top: 0;
@@ -311,9 +312,11 @@
     background: rgb(0 0 0 / 56%);
     color: #fff !important;
     transform: translateX(calc(var(--x)/100)) translateY(calc(var(--y)/40));
-     .title {
+
+    .title {
       color: #fff;
-      &::after{
+
+      &::after {
         background-color: #fff;
       }
     }

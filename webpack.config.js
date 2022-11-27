@@ -34,6 +34,12 @@ const htmlPluginEntries = templateFiles.map(
 );
 
 module.exports = {
+  stats: {
+    colors: true,
+    modules: true,
+    reasons: true,
+    errorDetails: true
+  },
   entry: {
     app: path.resolve(environment.paths.source, "js", "app.js"),
   },
